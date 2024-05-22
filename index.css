@@ -1,0 +1,98 @@
+body {
+    background-image: url(backgroundVer1.jpg);
+}
+
+
+footer {
+    width: max-content;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(48, 52, 52);
+    color: white;
+}
+
+table {
+    width: max-content;
+}
+
+.menu {
+    text-align: center;
+    margin: auto;
+    max-height:max-content;
+}
+
+.pizza {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: middle;
+    border: 5px groove orange;
+    background-color: rgb(250, 186, 67);
+}
+.pizza a {
+    text-decoration: none;
+    color: black;
+}
+
+.image img {
+    width: 230px;
+    height: 200px;
+}
+
+.disabledImg {
+    filter: grayscale(100%);
+}
+.text p {
+    width: 120px;
+    text-align: center;
+}
+.description {
+    font-size: smaller;
+}
+.felkover {
+    font-weight: bold;
+}
+
+.neon {
+    font-family: cursive;
+    color: white;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff00
+}
+
+.formBg {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    padding: 30px;
+    
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+      0 0 4px #f1f172,
+      0 0 11px #f1f172,
+      0 0 19px #f1f172,
+      0 0 40px rgb(255, 179, 0),
+      0 0 80px rgb(255, 179, 0),
+      0 0 90px rgb(255, 179, 0),
+      0 0 100px rgb(255, 179, 0),
+      0 0 150px rgb(255, 179, 0);
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #f1f172,
+      0 0 4px #f1f172,
+      0 0 6px #f1f172,
+      0 0 10px rgb(255, 179, 0),
+      0 0 45px rgb(255, 179, 0),
+      0 0 55px rgb(255, 179, 0),
+      0 0 70px rgb(255, 179, 0),
+      0 0 80px rgb(255, 179, 0);
+  }
+}
+
+.sya {
+    animation: pulsate 2.5s infinite alternate;
+}
